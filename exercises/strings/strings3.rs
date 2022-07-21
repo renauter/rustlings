@@ -3,7 +3,7 @@
 
 fn trim_me(input: &str) -> String {
     // TODO: Remove whitespace from the end of a string!
-    input.trim_start().trim_end().to_string()
+    input.trim().to_string()
 }
 
 fn compose_me(input: &str) -> String {
