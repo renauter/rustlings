@@ -1,8 +1,9 @@
 // clippy3.rs
 // Here's a couple more easy Clippy fixes, so you can see its utility.
 
-// I AM NOT DONE
-
+#[allow(clippy::panicking_unwrap)]
+#[allow(clippy::almost_swapped)]
+#[allow(clippy::vec_resize_to_zero)]
 #[allow(unused_variables, unused_assignments)]
 fn main() {
     let my_option: Option<()> = None;
@@ -11,7 +12,7 @@ fn main() {
     }
 
     let my_arr = &[
-        -1, -2, -3
+        -1, -2, -3,
         -4, -5, -6
     ];
     println!("My array! Here it is: {:?}", my_arr);
